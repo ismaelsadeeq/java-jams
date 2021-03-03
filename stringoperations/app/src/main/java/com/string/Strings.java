@@ -21,6 +21,8 @@ public static String Reverse(String str){
      System.out.println(letter);
    }
    System.out.println(Reverse("Sadeeq"));
+   String myText = "this is a sample text for test";
+   System.out.println(myText.substring(5,16));
    
   }
 }
