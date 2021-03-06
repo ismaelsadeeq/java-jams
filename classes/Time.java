@@ -1,15 +1,15 @@
 public class Time {
   public int hour;
   public int minute;
-  public double seconds;
+  public int seconds;
 
   public Time(){
     this.hour = 0;
     this.minute = 0;
-    this.seconds = 0.0;
+    this.seconds = 0;
   }
 
-  public Time(int hour,int minute, double seconds){
+  public Time(int hour,int minute, int seconds){
     this.hour = hour;
     this.minute = minute;
     this.seconds = seconds;
@@ -30,16 +30,35 @@ public class Time {
   public void setMinute(int minute){
     this.hour = minute;
   }
+  public String toString(){
+    return String.format("%02d: %02d: %02d:", this.hour, this.minute, this.seconds);
+  }
+  public void approx(){ //modifier
+    if(this.seconds >=30 ){
+      this.minute+=1;
+      this.seconds=0;
+      if(this.minute >=60){
+        this.hour+=1;
+        this.minute=0;
+      }
+    }else{
+      this.minute =0;
+    }
+  }
   public void setSeconds(int seconds){
     this.hour = seconds;
   }
   public static void main(String args[]){
-    Time time = new Time(11, 50, 34.3);
+    Time time = new Time(11, 50, 34);
     time.hour = 12;
     System.out.println(time.minute);
     Time time2 = new Time();
     time2.hour = 12;
-    System.out.println("our time is "+time2.getHour() +time2.getMinute());
+    System.out.println("our time is "+ time);//time2.getHour() +time2.getMinute());
+    System.out.println(time2);
+    Time time3 = new Time(12,59,50);
+    time3.approx();
+    System.out.println("out second time is :"+time3);
 
   }
 }
