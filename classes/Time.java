@@ -41,6 +41,9 @@ public class Time {
         this.hour+=1;
         this.minute=0;
       }
+      if(this.hour>=23){
+        this.hour = 0;
+      }
     }else{
       this.minute =0;
     }
@@ -56,7 +59,7 @@ public class Time {
     time2.hour = 12;
     System.out.println("our time is "+ time);//time2.getHour() +time2.getMinute());
     System.out.println(time2);
-    Time time3 = new Time(12,59,50);
+    Time time3 = new Time(23,59,50);
     time3.approx();
     System.out.println("out second time is :"+time3);
 
