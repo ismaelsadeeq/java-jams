@@ -18,19 +18,28 @@ public class Time {
     return this.hour;
   }
   public int getMinute(){
-    return this.hour;
+    return this.minute;
   }
   public int getSeconds(){
-    return this.hour;
+    return this.seconds;
   }
 
   public void setHour(int hour){
     this.hour = hour;
   }
+  public void setMinute(int minute){
+    this.hour = minute;
+  }
+  public void setSeconds(int seconds){
+    this.hour = seconds;
+  }
   public static void main(String args[]){
     Time time = new Time(11, 50, 34.3);
-    System.out.println(time.hour);
+    time.hour = 12;
+    System.out.println(time.minute);
     Time time2 = new Time();
-    System.out.println("our time is "+time2.getHour()+time2.getMinute());
+    time2.hour = 12;
+    System.out.println("our time is "+time2.getHour() +time2.getMinute());
+
   }
 }
