@@ -3,7 +3,13 @@ public class Time {
   public int minute;
   public double second;
 
-  public Time(int hour ,int minute, double seconds){
+  public Time(){
+    this.hour = 0;
+    this.minute = 0;
+    this.second = 0.0;
+  }
+
+  public Time(int hour,int minute, double seconds){
     this.hour = hour;
     this.minute = minute;
     this.second = seconds;
