@@ -27,7 +27,7 @@ public class Guess {
     boolean status = true;
     int win = 0;
     int lost = 0;
-    while(status = true){
+    while(status == true){
       System.out.println("I ' m thinking of a number between 1 and 100");
       System.out.println("Can you guess what it is?");
       Scanner num = new Scanner(System.in);
@@ -37,9 +37,8 @@ public class Guess {
       boolean game = guess(number);
       if(game){
         System.out.println("do you want to play again:");
-        num.nextLine();
+        // num.nextLine();
         String play = num.nextLine();
-        num.close();
         if(play.equals("yes")){
           win =+1;
           status = true;
@@ -50,14 +49,13 @@ public class Guess {
         }
       }else{
         System.out.println("do you want to play again:");
-        num.nextLine();
         String play = num.nextLine();
         if(play.equals("yes")){
           lost +=1;
           status =  true;
         }else{
           lost+=1;
-          System.out.println("you win : "+win+"times and lost : "+lost+"times");
+          System.out.println("you win : "+win+" times and lost : "+lost+" times");
           status = false;
         }
       }
