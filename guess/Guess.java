@@ -23,6 +23,7 @@ public class Guess {
     }
     return false;
   }
+  
   public static void main(String[] args){
     boolean status = true;
     int win = 0;
