@@ -1,0 +1,19 @@
+{
+  "name": "java-jams",
+  "version": "1.0.0",
+  "description": "learning java",
+  "main": "./Array/ArrayOperations.java",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismaelsadeeq/java-jams.git"
+  },
+  "author": "ismaelsadeeq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ismaelsadeeq/java-jams/issues"
+  },
+  "homepage": "https://github.com/ismaelsadeeq/java-jams#readme"
+}

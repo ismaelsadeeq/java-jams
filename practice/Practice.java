@@ -39,6 +39,30 @@ public class Practice {
     }
     return fibonacci(n - 1) + fibonacci(n - 2);
   }
+  //Encapsulation and generalisation
+  public static String count(int a){
+    while(a >= 0){
+      System.out.println(a);
+      a--;
+    }
+    System.out.println("Blastoff");
+    return "Counting your "+a +" downward";
+  } 
+  public static void doWhile(){
+    Scanner in = new Scanner(System.in);
+    boolean okay;
+    do {
+      System.out.print("Enter a number: ");
+      if (in.hasNextDouble()) {
+      okay = true;
+    }  else {
+      okay = false;
+      String word = in.next();
+      System.err.println(word + " is not a number");
+    }
+    } while (!okay);
+      double x = in.nextDouble();
+  }
   public static void main(String[] args){
     String dummyText;
     Scanner aim = new Scanner(System.in);
@@ -92,13 +116,18 @@ public class Practice {
     //recursion
     countdown(5);
     /**
-  * Overloading means naming two or more methods with the same name 
-    this can be done if and only if the parameters are not equal.
-  *
-  * @param how many parameters does the method has
-  * @return what a method is returning
-  */
+    * Overloading means naming two or more methods with the same name 
+      this can be done if and only if the parameters are not equal.
+    *
+    * @param how many parameters does the method has
+    * @return what a method is returning
+    */
 
-  System.out.println(factorial(3));
+    System.out.println(factorial(3));
+    count(5);
+
+    //do while loop
+    doWhile();
+
   }
 }
