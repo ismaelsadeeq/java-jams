@@ -61,7 +61,7 @@ public class Practice {
       System.err.println(word + " is not a number");
     }
     } while (!okay);
-      double x = in.nextDouble();
+      // double x = in.nextDouble();
   }
   public static void main(String[] args){
     String dummyText;

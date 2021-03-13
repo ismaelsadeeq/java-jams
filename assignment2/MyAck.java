@@ -1,4 +1,5 @@
-package com.ack;
+package assignment2;
+
 import java.util.Scanner;
 //ID Numbers
 //CSC/18u/4395

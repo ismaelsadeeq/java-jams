@@ -1,4 +1,4 @@
-package com.istriangle;
+package assignment1;
 //ID Numbers
 //CSC/18u/4395
 //CSC/18u/17u/4190

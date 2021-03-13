@@ -1,8 +1,10 @@
-package com.test;
+package slscsc201;
+
+
 //LTH/18u/3300
-public class Test {
+public class FirstName {
  
-public static String FirstName(){
+public static String FirstNamee(){
  String A = "* * *    **   * *    * *     **";
  String B = "*    *  *  *  *   *  *   *  *  *";
  String C = "* * *   *  *  * *    * *    *  *";
@@ -12,6 +14,6 @@ public static String FirstName(){
  return Name;
 }
   public static void main(String[] args) {
-   System.out.println(FirstName());
+   System.out.println(FirstNamee());
   }
 }

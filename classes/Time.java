@@ -1,3 +1,5 @@
+package classes;
+
 public class Time {
   public int hour;
   public int minute;

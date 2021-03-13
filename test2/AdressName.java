@@ -1,4 +1,5 @@
-package com.test2;
+package test2;
+
 //LTH/18u/3300
 public class AdressName {
   public static String AddressName(){
