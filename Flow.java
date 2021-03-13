@@ -32,5 +32,12 @@ public class Flow {
     newLine("ssdf",22);
     System.out.println(System.out);
     loops();
+    int size =5;
+    int[] names;
+    names = new int[5];
+    int[] counts;
+    double[] values;
+    counts = new int[4];
+    values = new double[size];
   }
 }
